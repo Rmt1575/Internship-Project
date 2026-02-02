@@ -14,6 +14,11 @@ import { MapDemo2 } from './components/MapDemo2.jsx';
 import { MapDemo3 } from './components/MapDemo3.jsx';
 import { MapDemo4 } from './components/MapDemo4.jsx';
 import { MapDemo5 } from './components/MapDemo5.jsx';
+import { MapDemo6 } from './components/MapDemo6.jsx';
+import { MapDemo7 } from './components/MapDemo7.jsx';
+import { MapDemo8 } from './components/MapDemo8.jsx';
+import { MapDemo9 } from './components/MapDemo9.jsx';
+import { MapDemo10 } from './components/MapDemo10.jsx';
 function App() {
   
   useEffect(() => {
@@ -32,7 +37,7 @@ function App() {
   return (
     <div>
       <Header1Component />
-      <MapDemo5/>
+      <MapDemo6 />
       <Footer1Component />
     </div>
   )
