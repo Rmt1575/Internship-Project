@@ -10,8 +10,9 @@ export const MapDemo9 = () => {
   ];
   return (
     <div style={{ color: "white" }}>
-      <h1>MAP DEMO 9</h1>
+      <h1 style={{textAlign:"center"}}>MAP DEMO 9</h1>
       <h3> Conditional Rendering</h3>
+      <br/>
       {users.map((user) => {
         return (
           <p key={user.id} style={{ color: user.active ? "green" : "red" }}>

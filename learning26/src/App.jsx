@@ -19,6 +19,10 @@ import { MapDemo7 } from './components/MapDemo7.jsx';
 import { MapDemo8 } from './components/MapDemo8.jsx';
 import { MapDemo9 } from './components/MapDemo9.jsx';
 import { MapDemo10 } from './components/MapDemo10.jsx';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar.jsx';
+import { Home } from './components/Home.jsx';
+
 function App() {
   
   useEffect(() => {
@@ -36,9 +40,21 @@ function App() {
 
   return (
     <div>
-      <Header1Component />
-      <MapDemo6 />
-      <Footer1Component />
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Portfolio' element={<ContentComponent/>}/>
+        <Route path='/MapDemo1' element={<MapDemo1/>}/>
+        <Route path='/MapDemo2' element={<MapDemo2/>}/>
+        <Route path='/MapDemo3' element={<MapDemo3/>}/>
+        <Route path='/MapDemo4' element={<MapDemo4/>}/>
+        <Route path='/MapDemo5' element={<MapDemo5/>}/>
+        <Route path='/MapDemo6' element={<MapDemo6/>}/>
+        <Route path='/MapDemo7' element={<MapDemo7/>}/>
+        <Route path='/MapDemo8' element={<MapDemo8/>}/>
+        <Route path='/MapDemo9' element={<MapDemo9/>}/>
+        <Route path='/MapDemo10' element={<MapDemo10/>}/>
+      </Routes>
     </div>
   )
 }

@@ -1,0 +1,61 @@
+.home {
+  margin: 0;
+  padding: 0;
+  color: "white";
+}
+
+.home h1 {
+  border: 1px solid #ff1a1a;
+  text-shadow: 0 0 2px #ff1a1a;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  font-size: 60px;
+  padding: 5px;
+  margin: 0;
+  color: #b30000;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.home h1:hover {
+  color: rgb(255, 0, 0);
+}
+
+.home h3 {
+  text-align: left;
+  font-size: 24px;
+  margin: 10px 0;
+  color: #6e6d6d;
+}
+
+.home li {
+  text-align: left;
+  font-size: 24px;
+  margin: 10px 0;
+  color: #6e6d6d;
+}
+
+.home b {
+  text-align: left;
+  font-size: 24px;
+  margin: 10px 0;
+  color: whitesmoke;
+}
+
+.home h2 {
+  border: 1px solid #ff1a1a;
+  text-shadow: 0 0 2px #ff1a1a;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  color: #b30000;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.home h2:hover {
+  color: rgb(255, 0, 0);
+}

@@ -31,8 +31,8 @@ export const MapDemo8 = () => {
     }
   };
   return (
-    <div style={{ color: "white" }}>
-      <h1 style={{ textAlign: "center" }}>MAP DEMO 8</h1>
+    <div style={{ textAlign: "center" , color: "white" }}>
+      <h1 >MAP DEMO 8</h1>
 
       <h3>Course Cards</h3>
 

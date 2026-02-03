@@ -10,7 +10,7 @@ export const MapDemo4 = () => {
   ];
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", color: "white" }}>
       <h1>MAP DEMO 4</h1>
       <table className="table table-dark">
         <thead>

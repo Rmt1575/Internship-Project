@@ -9,7 +9,7 @@ export const MapDemo2 = () => {
     ]
 
   return (
-    <div>
+    <div style={{color:"white"}}>
 
         <h1> MAP DEMO 2 </h1>
         {
