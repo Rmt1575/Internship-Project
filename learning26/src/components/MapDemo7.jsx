@@ -11,7 +11,8 @@ export const MapDemo7 = () => {
 
   return (
     <div>
-      <h3>Student Table</h3>
+      <h1 style={{color:"white", textAlign:"center"}}>MAP DEMO 7</h1>
+      <h3 style={{color:"white"}}>Student Table</h3>
       <table class="table table-dark" border="1" cellPadding="8">
         <thead>
           <tr>

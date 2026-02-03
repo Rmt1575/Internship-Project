@@ -11,10 +11,10 @@ export const MapDemo10 = () => {
   ];
 
   return (
-    <div style={{ color: "white" }}>
-      <h1 style={{textAlign: "center"}}>MAP DEMO 10</h1>
+    <div style={{ color: "white", textAlign: "center"}}>
+      <h1>MAP DEMO 10</h1>
       <br/>
-      <h3 style={{textAlign: "center"}}>Arena Slot Availability</h3>
+      <h3>Arena Slot Availability</h3>
 
       <table class="table table-dark">
         <thead>

@@ -66,9 +66,9 @@ export const MapDemo6 = () => {
   ];
   return (
     <div>
-      <h1>MAP DEMO 6</h1>
+      <h1 style={{color:"white", textAlign:"center"}}>MAP DEMO 6</h1>
       <div className="container">
-        <h2>Manga Store</h2>
+        <h2 style={{color:"white"}}>Manga Store</h2>
 
         <table class="table table-dark">
           <thead>
