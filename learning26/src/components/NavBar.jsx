@@ -5,9 +5,12 @@ export const NavBar = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Link class="nav-link" to="/">
-          Home
+        <Link class="nav-link" to="/" style={{ color: "red" }}>
+          NETFLIX
         </Link>
+        {/* <Link class="nav-link" to="/">
+          Home
+        </Link> */}
         <button
           class="navbar-toggler"
           type="button"
@@ -23,6 +26,21 @@ export const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+              <Link class="nav-link" to="/netflixshows">
+                Shows
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/netflixmovies">
+                Movies
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/iplteams">
+                Teams
+              </Link>
+            </li>
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/Portfolio">
                 Portfolio
               </Link>
@@ -76,7 +94,7 @@ export const NavBar = () => {
               <Link class="nav-link" to="/MapDemo10">
                 MAPDEMO10
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

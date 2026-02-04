@@ -1,0 +1,22 @@
+.teams {
+  color: whitesmoke;
+}
+.teams h1 {
+  color: #ff4d4d;
+  text-shadow: 0 0 3px #ff1a1a;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+.teams img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: calc(50%);
+}
+.teams li {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -22,6 +22,13 @@ import { MapDemo10 } from './components/MapDemo10.jsx';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx';
 import { Home } from './components/Home.jsx';
+import { Error } from './components/Error.jsx';
+import { NetflixHome } from './components/NetflixHome.jsx';
+import { NetflixShows } from './components/NetflixShows.jsx';
+import { NetflixMovies } from './components/NetflixMovies.jsx';
+import { Watch } from './components/Watch.jsx';
+import { IPLTeams } from './components/IPLTeams.jsx';
+import { TeamDetails } from './components/TeamDetails.jsx';
 
 function App() {
   
@@ -42,7 +49,14 @@ function App() {
     <div>
       <NavBar />
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<NetflixHome/>}/>
+        <Route path='/netflixshows' element={<NetflixShows/>}/>
+        <Route path='/netflixmovies' element={<NetflixMovies/>}/>
+        <Route path='/iplteams' element={<IPLTeams/>}/>
+        <Route path='/watch/:name' element={<Watch/>}/>
+        <Route path='/teamdetails/:name' element={<TeamDetails/>}/>
+        <Route path='/*' element={<Error/>}/>
+        {/* <Route path='/' element={<Home/>}/>
         <Route path='/Portfolio' element={<ContentComponent/>}/>
         <Route path='/MapDemo1' element={<MapDemo1/>}/>
         <Route path='/MapDemo2' element={<MapDemo2/>}/>
@@ -53,7 +67,7 @@ function App() {
         <Route path='/MapDemo7' element={<MapDemo7/>}/>
         <Route path='/MapDemo8' element={<MapDemo8/>}/>
         <Route path='/MapDemo9' element={<MapDemo9/>}/>
-        <Route path='/MapDemo10' element={<MapDemo10/>}/>
+        <Route path='/MapDemo10' element={<MapDemo10/>}/> */}
       </Routes>
     </div>
   )
