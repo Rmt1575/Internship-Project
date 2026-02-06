@@ -5,12 +5,12 @@ export const NavBar = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        {/* <Link class="nav-link" to="/" style={{ color: "red" }}>
+        <Link class="nav-link" to="/" style={{ color: "red" }}>
           NETFLIX
-        </Link> */}
-        <Link class="nav-link" to="/" style={{color: "red"}}>
-          HOME
         </Link>
+        {/* <Link class="nav-link" to="/" style={{color: "red"}}>
+          HOME
+        </Link> */}
         <button
           class="navbar-toggler"
           type="button"
@@ -25,7 +25,7 @@ export const NavBar = () => {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            {/* <li class="nav-item">
+            <li class="nav-item">
               <Link class="nav-link" to="/netflixshows">
                 Shows
               </Link>
@@ -39,8 +39,28 @@ export const NavBar = () => {
               <Link class="nav-link" to="/iplteams">
                 Teams
               </Link>
-            </li> */}
+            </li>
             <li class="nav-item">
+              <Link class="nav-link" to="/functiondemo">
+                FD1
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/usestatedemo1">
+                USD1
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/usestatedemo2">
+                USD2
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/usestatedemo3">
+                USD3
+              </Link>
+            </li>
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/Portfolio">
                 Portfolio
               </Link>
@@ -99,7 +119,7 @@ export const NavBar = () => {
               <Link class="nav-link" to="/scoreboard">
                 SCORE BOARD
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

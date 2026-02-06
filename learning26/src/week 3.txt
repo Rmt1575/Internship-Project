@@ -1,0 +1,215 @@
+WEEK -- 3 :
+============
+============
+
+
+
+Date : 02/02/2026
+==================
+
+Array :
+--------
+var/let arrayname \[]
+
+(()=>{}) --> arrow function
+
+use map to return array :
+
+{
+cars.map((variablename)=>{
+ 	return (
+ 		<h1>{c}</h1>
+ 		)
+ 	})
+}
+
+
+Demo1 :
+array with string
+
+Demo2 :
+print objects form array
+
+Demo3 :
+students table
+
+Demo4 :
+cities table
+
+
+Conditional styling :
+----------------------
+condition \&\& part-2
+    |
+    |-->if true then execute part-2
+
+can't return object in react
+--> error :
+
+tasks :
+--------
+How to change port from default 5173 to other port
+
+new 5 mapdemos:
+----------------
+mapdemo 6,7,8,9,10 :
+table (atleast one table with image)
+min : 6 columns and 6 rows
+min : 4 condition styling apply
+
+additional task : if image is missing in any row print there image is missing...
+
+
+
+Date : 03/02/2026
+==================
+
+React routing...
+
+react-router-dom
+npm i react-router-dom
+
+<Browserrouter> ----> It enables routing in react application
+    	--> main.jsx
+
+<Routes>	----> It will hold all route
+<Route>		----> It will create url and maintain element
+    	---> both in app.jsx
+
+    		<Routes>
+    			<Route />
+    		</Routes>
+
+
+NetflixMovies.jsx -->url -->app.jsx
+NetflixShows.jsx -->url->app.jsx
+NetflixHome.jsx -->url -->app.jsx
+        -->Navbar.jsx --> bootstrap ..
+
+
+single page application -->react js angular..... page should not refresh..------| 
+                                                                                |
+<Link> tag from react-router-dom --> insted of anchor tag <a> to <--------------| 
+
+
+Step-1 :
+    	Create Component
+Step-2 : 
+    	App.jsx
+    		-->Route - create link
+
+Step-3 :
+    	NavBar.jsx
+    		--><li>
+                    <Link to="created link"/> --> provide link in to="" 
+    		   </li>
+
+
+tasks : 
+--------
+extra 3 component add in route
+
+
+
+Date : 04/02/2026
+==================
+
+Nested and Dynamic Routing : 
+-----------------------------
+
+url --> data
+
+--> 404 page not found 
+--> watchComponent --> url reg --> app.jsx routes..
+--> shows --> hardcoded implementation of /watch/movieName
+--> movies --> array --> iterate ---> watch --> url..
+
+{movies.map((movie) => {
+           return (
+            <li>
+               <Link to={`/watch/${movie.movieName}`}>{movie.movieName}</Link>
+             </li>
+           )
+        })}
+
+tasks :
+--------
+Teams --> 10 teams
+
+<li> csk
+<li> rcb
+<li> mi
+
+csk --> click --> TeamDetails 
+
+/teamdetais/csk --> playing..csk
+
+
+
+Date : 05/02/2026
+==================
+
+react js hooks:
+hook is either componennt life cycle or built-in functions
+
+hooks: function based 
+
+all hookes either its predefine, thirdparth, user-defined unction all name starts with use
+
+
+useState
+useEffect
+useRef
+useParams
+
+
+flow:
+------
+packet.json --> index.html --> main.jsx --> app.jsx --> Route --> component --> data
+
+DOM - Document Object Model 
+
+HTML ---> js --->dynamic content full dom update
+js ---> DOM --> update ---> dom object fully update
+
+DOM --> V-DOM --> process --> comp-algo. --> VDOM change --> og DOM compare --> 
+
+
+2 way to call function
+---> function as object --> with out () parenthesis 
+    			--> if with () parenthesis then it will call this function automatically  
+--> function with parameter --> arrow function without name or key 
+    					--> then call the function with parameter
+
+print : --> consol.log("_ _ _ _",variable)
+
+
+UseState() : single page application: react state --> refresh--xx 
+--> Return 2 parameter [state,setcount] 
+--> Return type : 
+    	--> return void   "or" 
+    	--> return new array 
+
+setProcess --> setter function --> it will use for update state variable
+ex. of usestate :
+    	const [process , setProcess] = useState()
+    	setProcess(process***)  --> call this to make change in process 
+
+
+java script --> dynamically typed language 
+
+2 way to add data in array :
+-----------------------------
+push --> add data on original array	push() - return type --> new length of array (number) 
+spread operator --> y = ["",""]
+        		--> ycopy = [...y,""]
+
+usestatedemo1 - count
+usestatedemo2 - loading
+usestatedemo3 - users -- add data in array 
+
+Tasks :
+--------
+Reasearch on VDOM ==>> full documentary
+useState advantages(pros) and disadvantages(cons) 
+javaScript --> promise next to next monday
