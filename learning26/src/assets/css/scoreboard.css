@@ -1,0 +1,263 @@
+/* ===== PAGE BACKGROUND ===== */
+.scoreboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0a0f14, #0d1b2a);
+  padding: 20px 40px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ===== TITLE ===== */
+.score-title {
+  text-align: center;
+  color: red;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+/* ===== TABLE BASE ===== */
+.scoreboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ===== TABLE HEADER ===== */
+.scoreboard-table thead tr {
+  background: linear-gradient(to right, #1a1a1a, #222);
+  height: 55px;
+}
+
+.scoreboard-table thead th {
+  color: #9fb3c8;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ===== TABLE BODY ROWS ===== */
+.scoreboard-table tbody tr {
+  height: 72px;
+  transition: background 0.2s ease;
+}
+
+/* ===== TABLE CELLS ===== */
+.scoreboard-table td {
+  font-size: 15px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* ===== PLAYER COLUMN ===== */
+.player-cell {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.player-name {
+  display: inline;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+}
+
+.riot-id {
+  display: block;
+  font-size: 12px;
+  color: #8fa3b0;
+  margin-top: 4px;
+}
+
+.kd {
+  font-weight: 600;
+  color: #e0f2fe;
+}
+
+/* ===== MY TEAM (GREEN / TEAL) ===== */
+.my-team {
+  background: linear-gradient(
+    to right,
+    rgba(20, 120, 110, 0.35),
+    rgba(10, 40, 45, 0.15)
+  );
+}
+
+.my-team:hover {
+  background: linear-gradient(
+    to right,
+    rgba(20, 160, 145, 0.45),
+    rgba(10, 60, 70, 0.25)
+  );
+}
+
+/* ===== ENEMY TEAM (RED) ===== */
+.enemy-team {
+  background: linear-gradient(
+    to right,
+    rgba(150, 30, 30, 0.35),
+    rgba(45, 10, 10, 0.15)
+  );
+}
+
+.enemy-team:hover {
+  background: linear-gradient(
+    to right,
+    rgba(190, 40, 40, 0.45),
+    rgba(70, 15, 15, 0.25)
+  );
+}
+
+/* ===== ACS ===== */
+.acs {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ===== RANK COLORS ===== */
+.rank-gold {
+  color: #f4d03f;
+  font-weight: 600;
+}
+
+.rank-silver {
+  color: #cfd8dc;
+  font-weight: 600;
+}
+
+.rank-bronze {
+  color: #cd7f32;
+  font-weight: 600;
+}
+
+/* ===== MATCH MVP (MY TEAM) ===== */
+.mvp-my-team {
+  position: relative;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 255, 220, 0.25),
+    0 0 25px rgba(0, 255, 220, 0.35);
+  animation: mvpGlowGreen 2s infinite alternate;
+}
+
+/* ===== ENEMY TEAM MVP ===== */
+.mvp-enemy-team {
+  position: relative;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 70, 85, 0.25),
+    0 0 25px rgba(255, 70, 85, 0.35);
+  animation: mvpGlowRed 2s infinite alternate;
+}
+
+/* ===== GLOW ANIMATIONS ===== */
+@keyframes mvpGlowGreen {
+  from {
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 255, 220, 0.2),
+      0 0 18px rgba(0, 255, 220, 0.3);
+  }
+  to {
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 255, 220, 0.4),
+      0 0 30px rgba(0, 255, 220, 0.6);
+  }
+}
+
+@keyframes mvpGlowRed {
+  from {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 70, 85, 0.2),
+      0 0 18px rgba(255, 70, 85, 0.3);
+  }
+  to {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 70, 85, 0.4),
+      0 0 30px rgba(255, 70, 85, 0.6);
+  }
+}
+
+/* ===== PLAYER NAME ROW ===== */
+.player-name-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== MVP BADGE BASE ===== */
+.mvp-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ===== MATCH MVP (GOLD) ===== */
+.match-mvp {
+  white-space: nowrap;
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.12);
+  box-shadow:
+    0 0 6px rgba(255, 215, 0, 0.6),
+    0 0 12px rgba(255, 215, 0, 0.4);
+}
+
+/* ===== TEAM MVP (SILVER) ===== */
+.team-mvp {
+  color: #e0e0e0;
+  background: rgba(220, 220, 220, 0.12);
+  box-shadow:
+    0 0 6px rgba(220, 220, 220, 0.6),
+    0 0 12px rgba(220, 220, 220, 0.4);
+}
+
+
+/* ===== ANIMATIONS ===== */
+@keyframes matchMvpGlow {
+  from {
+    box-shadow:
+      0 0 5px rgba(255, 215, 0, 0.4),
+      0 0 10px rgba(255, 215, 0, 0.25);
+  }
+  to {
+    box-shadow:
+      0 0 10px rgba(255, 215, 0, 0.8),
+      0 0 20px rgba(255, 215, 0, 0.6);
+  }
+}
+
+@keyframes teamMvpGlow {
+  from {
+    box-shadow:
+      0 0 5px rgba(220, 220, 220, 0.4),
+      0 0 10px rgba(220, 220, 220, 0.25);
+  }
+  to {
+    box-shadow:
+      0 0 10px rgba(220, 220, 220, 0.8),
+      0 0 20px rgba(220, 220, 220, 0.6);
+  }
+}
+
+/* ===== HOVER-ONLY MVP ANIMATION ===== */
+.scoreboard-table tbody tr:hover .match-mvp {
+  animation: matchMvpGlow 1.2s infinite alternate;
+}
+
+.scoreboard-table tbody tr:hover .team-mvp {
+  animation: teamMvpGlow 1.2s infinite alternate;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-arrow {
+  font-size: 12px;
+  margin-left: 6px;
+  color: #6ee7e7;
+}

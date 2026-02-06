@@ -29,6 +29,7 @@ import { NetflixMovies } from './components/NetflixMovies.jsx';
 import { Watch } from './components/Watch.jsx';
 import { IPLTeams } from './components/IPLTeams.jsx';
 import { TeamDetails } from './components/TeamDetails.jsx';
+import { RouteComponent1 } from './components/RouteComponent1.jsx';
 
 function App() {
   
@@ -47,16 +48,16 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      <NavBar/>
       <Routes>
-        <Route path='/' element={<NetflixHome/>}/>
+        {/* <Route path='/' element={<NetflixHome/>}/>
         <Route path='/netflixshows' element={<NetflixShows/>}/>
         <Route path='/netflixmovies' element={<NetflixMovies/>}/>
         <Route path='/iplteams' element={<IPLTeams/>}/>
         <Route path='/watch/:name' element={<Watch/>}/>
         <Route path='/teamdetails/:name' element={<TeamDetails/>}/>
-        <Route path='/*' element={<Error/>}/>
-        {/* <Route path='/' element={<Home/>}/>
+        <Route path='/*' element={<Error/>}/> */}
+        <Route path='/' element={<Home/>}/>
         <Route path='/Portfolio' element={<ContentComponent/>}/>
         <Route path='/MapDemo1' element={<MapDemo1/>}/>
         <Route path='/MapDemo2' element={<MapDemo2/>}/>
@@ -67,7 +68,8 @@ function App() {
         <Route path='/MapDemo7' element={<MapDemo7/>}/>
         <Route path='/MapDemo8' element={<MapDemo8/>}/>
         <Route path='/MapDemo9' element={<MapDemo9/>}/>
-        <Route path='/MapDemo10' element={<MapDemo10/>}/> */}
+        <Route path='/MapDemo10' element={<MapDemo10/>}/>
+        <Route path='/scoreboard' element={<RouteComponent1/>}/>
       </Routes>
     </div>
   )

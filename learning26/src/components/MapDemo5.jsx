@@ -31,7 +31,7 @@ export const MapDemo5 = () => {
                             <td>{st.id}</td>
                             <td>{st.name}</td>
                             <td style={{color: st.age>25 ? "red" : "white"}}>{st.age}</td>
-                            <td style={{backgroundColor:st.marks>85 && "lightgreen"}}>{st.marks}</td>
+                            <td style={{backgroundColor : st.marks>85 && "lightgreen"}}>{st.marks}</td>
                             <td>{st.city}</td>
                             <td>{st.gender}</td>
                             <td>{st.hobby}</td>
