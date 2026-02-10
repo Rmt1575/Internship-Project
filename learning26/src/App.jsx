@@ -33,6 +33,7 @@ import { UseStateDemo1 } from "./components/UseStateDemo1.jsx";
 import { UseStateDemo2 } from "./components/UseStateDemo2.jsx";
 import { UseStateDemo3 } from "./components/UseStateDemo3.jsx";
 import { Employee } from "./components/Employee.jsx";
+import { CardComponent } from "./components/CardComponent.jsx";
 
 function App() {
   useEffect(() => {
@@ -65,18 +66,19 @@ function App() {
         <Route path="/usestatedemo2" element={<UseStateDemo2 />} />
         <Route path="/usestatedemo3" element={<UseStateDemo3 />} />
         <Route path="/employee" element={<Employee />} />
+        <Route path="/cards" element={<CardComponent />} />
         {/* <Route path='/' element={<Home/>}/> */}
-        <Route path='/MapDemo1' element={<MapDemo1/>}/>
-        <Route path='/MapDemo2' element={<MapDemo2/>}/>
-        <Route path='/MapDemo3' element={<MapDemo3/>}/>
-        <Route path='/MapDemo4' element={<MapDemo4/>}/>
-        <Route path='/MapDemo5' element={<MapDemo5/>}/>
-        <Route path='/MapDemo6' element={<MapDemo6/>}/>
-        <Route path='/MapDemo7' element={<MapDemo7/>}/>
-        <Route path='/MapDemo8' element={<MapDemo8/>}/>
-        <Route path='/MapDemo9' element={<MapDemo9/>}/>
-        <Route path='/MapDemo10' element={<MapDemo10/>}/>
-        <Route path='/scoreboard' element={<RouteComponent1/>}/>
+        <Route path="/MapDemo1" element={<MapDemo1 />} />
+        <Route path="/MapDemo2" element={<MapDemo2 />} />
+        <Route path="/MapDemo3" element={<MapDemo3 />} />
+        <Route path="/MapDemo4" element={<MapDemo4 />} />
+        <Route path="/MapDemo5" element={<MapDemo5 />} />
+        <Route path="/MapDemo6" element={<MapDemo6 />} />
+        <Route path="/MapDemo7" element={<MapDemo7 />} />
+        <Route path="/MapDemo8" element={<MapDemo8 />} />
+        <Route path="/MapDemo9" element={<MapDemo9 />} />
+        <Route path="/MapDemo10" element={<MapDemo10 />} />
+        <Route path="/scoreboard" element={<RouteComponent1 />} />
       </Routes>
     </div>
   );

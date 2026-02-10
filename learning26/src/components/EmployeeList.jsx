@@ -1,4 +1,5 @@
 import React from "react";
+import { SubEmployeeList } from "./SubEmployeeList";
 
 export const EmployeeList = (props) => {
   console.log("emplist ", props);
@@ -34,6 +35,7 @@ export const EmployeeList = (props) => {
           })}
         </tbody>
       </table>
+      <SubEmployeeList title={props.title} />
     </div>
   );
 };
