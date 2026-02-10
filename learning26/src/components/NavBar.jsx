@@ -26,6 +26,11 @@ export const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+              <Link class="nav-link" to="/Portfolio">
+                Portfolio
+              </Link>
+            </li>
+            <li class="nav-item">
               <Link class="nav-link" to="/netflixshows">
                 Shows
               </Link>
@@ -60,12 +65,12 @@ export const NavBar = () => {
                 USD3
               </Link>
             </li>
-            {/* <li class="nav-item">
-              <Link class="nav-link" to="/Portfolio">
-                Portfolio
+            <li>
+              <Link class="nav-link" to="/employee">
+                Employee
               </Link>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/MapDemo1">
                 MAPDEMO1
               </Link>

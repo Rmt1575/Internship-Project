@@ -1,6 +1,8 @@
 import React from 'react'
 import "../assets/css/content.css"
 import fakerImg from "../assets/images/Faker_2020.jpg"
+import { HeaderComponent } from './HeaderComponent'
+import { FooterComponent } from './FooterComponent'
 
 export function ContentComponent() {
   const txt = `
@@ -25,8 +27,10 @@ export function ContentComponent() {
   NLB champion (2014)
 `
   return (
+    <>
+    <HeaderComponent/>
     <div className="content">
-
+      
       <img src={fakerImg} alt="Faker" className="faker-image" /> {/*Faker Image*/}
 
       <h2><b className="title">Personal Information</b></h2>
@@ -54,7 +58,11 @@ export function ContentComponent() {
       <pre>
         {txt}
       </pre>
+      
     </div>
+
+    <FooterComponent/>
+    </>
   )
 
 }

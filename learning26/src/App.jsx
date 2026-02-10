@@ -4,8 +4,6 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { useEffect } from "react";
 
-import { HeaderComponent } from "./components/HeaderComponent.jsx";
-import { FooterComponent } from "./components/FooterComponent.jsx";
 import { ContentComponent } from "./components/ContentComponent.jsx";
 import { Header1Component } from "./components/Header1Component.jsx";
 import { Footer1Component } from "./components/Footer1Component.jsx";
@@ -34,6 +32,7 @@ import { FunctionDemo1 } from "./FunctionDemo1.jsx";
 import { UseStateDemo1 } from "./components/UseStateDemo1.jsx";
 import { UseStateDemo2 } from "./components/UseStateDemo2.jsx";
 import { UseStateDemo3 } from "./components/UseStateDemo3.jsx";
+import { Employee } from "./components/Employee.jsx";
 
 function App() {
   useEffect(() => {
@@ -54,6 +53,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<NetflixHome />} />
+        <Route path="/Portfolio" element={<ContentComponent />} />
         <Route path="/netflixshows" element={<NetflixShows />} />
         <Route path="/netflixmovies" element={<NetflixMovies />} />
         <Route path="/iplteams" element={<IPLTeams />} />
@@ -64,8 +64,8 @@ function App() {
         <Route path="/usestatedemo1" element={<UseStateDemo1 />} />
         <Route path="/usestatedemo2" element={<UseStateDemo2 />} />
         <Route path="/usestatedemo3" element={<UseStateDemo3 />} />
-        {/* <Route path='/' element={<Home/>}/>
-        <Route path='/Portfolio' element={<ContentComponent/>}/>
+        <Route path="/employee" element={<Employee />} />
+        {/* <Route path='/' element={<Home/>}/> */}
         <Route path='/MapDemo1' element={<MapDemo1/>}/>
         <Route path='/MapDemo2' element={<MapDemo2/>}/>
         <Route path='/MapDemo3' element={<MapDemo3/>}/>
@@ -76,7 +76,7 @@ function App() {
         <Route path='/MapDemo8' element={<MapDemo8/>}/>
         <Route path='/MapDemo9' element={<MapDemo9/>}/>
         <Route path='/MapDemo10' element={<MapDemo10/>}/>
-        <Route path='/scoreboard' element={<RouteComponent1/>}/> */}
+        <Route path='/scoreboard' element={<RouteComponent1/>}/>
       </Routes>
     </div>
   );

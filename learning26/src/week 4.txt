@@ -1,0 +1,96 @@
+WEEK -- 4 :
+============
+============
+
+
+
+Date : 09/02/2026
+==================
+
+Sequence diagram 
+
+Activity diagram 
+
+
+
+Date : 10/02/2026
+==================
+
+react js component based arch :
+-------------------------------- 
+relation : 
+parent component ---> child component
+
+how to comunicate btw components :
+1. props : p ---> c
+2. context : p ---> c ---> c ---> c 
+3. redux : state management tool (without relation of parent - child)
+
+
+props : 
+========
+
+props -- properties 
+read only 
+it's not a keyword 
+datatype --> object 
+
+props can't be printed directly because it's datatype is object and object can't printed directly in react
+
+variable : 
+-----------
+{title : "_ _ _ _ _"} 
+{props.key} --> variable 
+
+object : 
+---------
+updated --> {title : "_ _ _ _ _", company : {}} 
+{props.key.name/year} --> object 
+
+array : 
+--------
+updated --> {title : "", company : {}, employee : [{},{},{}]}
+{props.key.emplotee} {map --> keyofmap.elementofarray}
+
+fall back mechanism --> if value can't get from somewhere then it can use default value 
+ex., {props.description || "Discription"} 
+
+Disadvantages of props : 
+------------------------- 
+parent --> child --> child --> --> --> no data 
+
+props driling : 
+--> use to solve this desadvantage 
+
+
+Employees
+    title
+    object
+    array
+EmployeeList
+    props
+    array
+SubEmployeeList
+    props --> empty
+    drilling
+
+input handling : 
+================= 
+onChange
+
+
+task : 
+-------
+
+props : 
+3 components 
+create reusable table using props 
+
+input handling : 
+create 10 inputs in single components : like name, email, age, password....
+
+
+
+Date : 11/02/2026
+==================
+
