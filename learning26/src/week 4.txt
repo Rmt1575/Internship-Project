@@ -24,7 +24,7 @@ parent component ---> child component
 how to comunicate btw components :
 1. props : p ---> c
 2. context : p ---> c ---> c ---> c 
-3. redux : state management tool (without relation of parent - child)
+3. redux : state management tool (without relation of parent - child) 
 
 
 props : 
@@ -32,6 +32,8 @@ props :
 
 props -- properties 
 read only 
+immutable 
+unidirectional 
 it's not a keyword 
 datatype --> object 
 
@@ -39,12 +41,12 @@ props can't be printed directly because it's datatype is object and object can't
 
 variable : 
 -----------
-{title : "_ _ _ _ _"} 
+{title : ""} 
 {props.key} --> variable 
 
 object : 
 ---------
-updated --> {title : "_ _ _ _ _", company : {}} 
+updated --> {title : "", company : {}} 
 {props.key.name/year} --> object 
 
 array : 
@@ -62,7 +64,6 @@ parent --> child --> child --> --> --> no data
 props driling : 
 --> use to solve this desadvantage 
 
-
 Employees
     title
     object
@@ -76,21 +77,21 @@ SubEmployeeList
 
 input handling : 
 ================= 
-onChange
+onChange 
 
 
 task : 
--------
+------- 
 
 props : 
 3 components 
 create reusable table using props 
 
 input handling : 
-create 10 inputs in single components : like name, email, age, password....
+create 10 inputs in single components : like name, email, age, password.... 
 
 
 
-Date : 11/02/2026
-==================
+Date : 11/02/2026 
+================== 
 

@@ -34,6 +34,7 @@ import { UseStateDemo2 } from "./components/UseStateDemo2.jsx";
 import { UseStateDemo3 } from "./components/UseStateDemo3.jsx";
 import { Employee } from "./components/Employee.jsx";
 import { CardComponent } from "./components/CardComponent.jsx";
+import { Player } from "./components/Player.jsx";
 
 function App() {
   useEffect(() => {
@@ -66,6 +67,7 @@ function App() {
         <Route path="/usestatedemo2" element={<UseStateDemo2 />} />
         <Route path="/usestatedemo3" element={<UseStateDemo3 />} />
         <Route path="/employee" element={<Employee />} />
+        <Route path="/valorant" element={<Player/>}/>
         <Route path="/cards" element={<CardComponent />} />
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path="/MapDemo1" element={<MapDemo1 />} />
