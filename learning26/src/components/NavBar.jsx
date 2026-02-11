@@ -80,6 +80,21 @@ export const NavBar = () => {
                 VALORANT
               </Link>
             </li>
+            <li>
+              <Link class="nav-link" to="/formdemo1">
+                FormDemo1
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/playerform">
+                PLAYER FORM
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/employeeform">
+                EMPLOYEE FORM
+              </Link>
+            </li>
             {/* <li class="nav-item">
               <Link class="nav-link" to="/MapDemo1">
                 MAPDEMO1

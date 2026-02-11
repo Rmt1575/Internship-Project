@@ -35,6 +35,9 @@ import { UseStateDemo3 } from "./components/UseStateDemo3.jsx";
 import { Employee } from "./components/Employee.jsx";
 import { CardComponent } from "./components/CardComponent.jsx";
 import { Player } from "./components/Player.jsx";
+import { FormDemo1 } from "./components/Form/FormDemo1.jsx";
+import { PlayerForm } from "./components/Form/PlayerForm.jsx";
+import { EmployeeForm } from "./components/Form/EmployeeForm.jsx";
 
 function App() {
   useEffect(() => {
@@ -67,8 +70,11 @@ function App() {
         <Route path="/usestatedemo2" element={<UseStateDemo2 />} />
         <Route path="/usestatedemo3" element={<UseStateDemo3 />} />
         <Route path="/employee" element={<Employee />} />
-        <Route path="/valorant" element={<Player/>}/>
+        <Route path="/valorant" element={<Player />} />
         <Route path="/cards" element={<CardComponent />} />
+        <Route path="/formdemo1" element={<FormDemo1 />} />
+        <Route path="/playerform" element={<PlayerForm />} />
+        <Route path="/employeeform" element={<EmployeeForm />} />
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path="/MapDemo1" element={<MapDemo1 />} />
         <Route path="/MapDemo2" element={<MapDemo2 />} />

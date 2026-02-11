@@ -97,7 +97,6 @@ Step-1 :
 Step-2 : 
     	App.jsx
     		-->Route - create link
-
 Step-3 :
     	NavBar.jsx
     		--><li>
@@ -155,7 +154,6 @@ hook is either componennt life cycle or built-in functions
 hooks: function based 
 
 all hookes either its predefine, thirdparth, user-defined unction all name starts with use
-
 
 useState
 useEffect

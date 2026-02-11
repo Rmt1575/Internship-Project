@@ -79,6 +79,21 @@ input handling :
 ================= 
 onChange 
 
+InpotDemo1.jsx : 
+----------------- 
+
+const [name,setName] = useState("") 
+const nameHandler((event)=>{
+    setName(event.target.value)
+})
+
+return (
+<div>
+<input type='text' onChange = {(event)=>{nameHandler(event)}}></input>
+{name}
+</div>
+)
+
 
 task : 
 ------- 
@@ -94,4 +109,40 @@ create 10 inputs in single components : like name, email, age, password....
 
 Date : 11/02/2026 
 ================== 
+
+InputDemo2
+
+FORMS : 
+react-hook-form --> form handling 
+formik 
+
+npm i react-hook-form 
+
+FormDemo1.jsx 
+---------------
+const {register, handlesubmit} = useForm()
+
+form -- submit --> handlesubmit ---> it will handle submit 
+
+tasks : 
+-------- 
+
+create submit button : onClick function ---> output section --> display information 
+hint : flag --> submitted
+
+dependent dropdown 
+country 
+    -state 
+json array design 
+
+form tasks : 
+3 forms --> minimum 5 fields 
+
+
+
+Date : 12/02/2026 
+================== 
+
+
+
 
