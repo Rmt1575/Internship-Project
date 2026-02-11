@@ -38,6 +38,7 @@ import { Player } from "./components/Player.jsx";
 import { FormDemo1 } from "./components/Form/FormDemo1.jsx";
 import { PlayerForm } from "./components/Form/PlayerForm.jsx";
 import { EmployeeForm } from "./components/Form/EmployeeForm.jsx";
+import { CountryStateComponent } from "./components/Form/ContryStateComponent.jsx";
 
 function App() {
   useEffect(() => {
@@ -75,6 +76,7 @@ function App() {
         <Route path="/formdemo1" element={<FormDemo1 />} />
         <Route path="/playerform" element={<PlayerForm />} />
         <Route path="/employeeform" element={<EmployeeForm />} />
+        <Route path="/countrystate" element={<CountryStateComponent />} />
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path="/MapDemo1" element={<MapDemo1 />} />
         <Route path="/MapDemo2" element={<MapDemo2 />} />
