@@ -105,6 +105,16 @@ export const NavBar = () => {
                 FormDemo2
               </Link>
             </li>
+            <li>
+              <Link class="nav-link" to="/blooddonation">
+                Blood-Donation
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/pguser">
+                PG User
+              </Link>
+            </li>
             {/* <li class="nav-item">
               <Link class="nav-link" to="/MapDemo1">
                 MAPDEMO1
