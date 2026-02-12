@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 
 export const CountryStateComponent = () => {
   const data = [
@@ -31,61 +32,88 @@ export const CountryStateComponent = () => {
     },
   ];
 
-  const [selectedCountry, setSelectedCountry] = useState("");
+  const { register, handleSubmit } = useForm();
+
+  const [selectedCountryId, setSelectedCountryId] = useState("");
   const [states, setStates] = useState([]);
-  const [selectedState, setSelectedState] = useState("");
+  const [result, setResult] = useState(null);
 
   const handleCountryChange = (e) => {
     const countryId = parseInt(e.target.value);
-    setSelectedCountry(countryId);
+    setSelectedCountryId(countryId);
 
-    const country = data.find((c) => c.countryId === countryId);
-    setStates(country ? country.states : []);
-    setSelectedState("");
+    const countryObj = data.find((c) => c.countryId === countryId);
+    setStates(countryObj ? countryObj.states : []);
   };
 
-  // Get selected country object
-  const selectedCountryObj = data.find((c) => c.countryId === selectedCountry);
+  const onSubmit = (formData) => {
+    // formData countryId is string => convert to number
+    const countryObj = data.find(
+      (c) => c.countryId === parseInt(formData.countryId),
+    );
+
+    setResult({
+      countryName: countryObj?.countryName,
+      stateName: formData.stateName,
+    });
+  };
 
   return (
     <div
       style={{ textAlign: "center", marginTop: "50px", color: "whitesmoke" }}
     >
       <h1 style={{ color: "red" }}>COUNTRY STATE SELECTION</h1>
-      <h2>Dependent Dropdown</h2>
+      <h2>Dependent Dropdown </h2>
 
-      <select onChange={handleCountryChange} value={selectedCountry}>
-        <option value="">Select Country</option>
-        {data.map((country) => (
-          <option key={country.countryId} value={country.countryId}>
-            {country.countryName}
-          </option>
-        ))}
-      </select>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        {/* Country */}
+        <select
+          {...register("countryId")}
+          onChange={handleCountryChange}
+          defaultValue=""
+        >
+          <option value="">Select Country</option>
+          {data.map((country) => (
+            <option key={country.countryId} value={country.countryId}>
+              {country.countryName}
+            </option>
+          ))}
+        </select>
+
+        {/* State */}
+        <select
+          {...register("stateName")}
+          disabled={!states.length}
+          defaultValue=""
+          style={{ marginLeft: "10px" }}
+        >
+          <option value="">Select State</option>
+          {states.map((state) => (
+            <option key={state.stateId} value={state.stateName}>
+              {state.stateName}
+            </option>
+          ))}
+        </select>
+
+        <br />
+        <br />
+
+        <button
+          type="submit"
+          style={{ padding: "8px 18px", cursor: "pointer" }}
+        >
+          Submit
+        </button>
+      </form>
 
       <br />
-      <br />
 
-      <select
-        onChange={(e) => setSelectedState(e.target.value)}
-        value={selectedState}
-        disabled={!states.length}
-      >
-        <option value="">Select State</option>
-        {states.map((state) => (
-          <option key={state.stateId} value={state.stateName}>
-            {state.stateName}
-          </option>
-        ))}
-      </select>
-
-      <br />
-      <br />
-
-      {selectedCountry && selectedState && (
+      {/* Print Result */}
+      {result && (
         <div>
-          <h3>Selected Country: {selectedCountryObj?.countryName}</h3>
-          <h3>Selected State: {selectedState}</h3>
+          <h3>
+            Country: {result.countryName} | State: {result.stateName}
+          </h3>
         </div>
       )}
     </div>

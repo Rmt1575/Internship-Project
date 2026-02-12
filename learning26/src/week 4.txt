@@ -110,7 +110,7 @@ create 10 inputs in single components : like name, email, age, password....
 Date : 11/02/2026 
 ================== 
 
-InputDemo2
+InputDemo2 
 
 FORMS : 
 react-hook-form --> form handling 
@@ -119,8 +119,8 @@ formik
 npm i react-hook-form 
 
 FormDemo1.jsx 
----------------
-const {register, handlesubmit} = useForm()
+--------------- 
+const {register, handlesubmit} = useForm() 
 
 form -- submit --> handlesubmit ---> it will handle submit 
 
@@ -128,7 +128,7 @@ tasks :
 -------- 
 
 create submit button : onClick function ---> output section --> display information 
-hint : flag --> submitted
+hint : flag --> submitted 
 
 dependent dropdown 
 country 
@@ -143,6 +143,36 @@ form tasks :
 Date : 12/02/2026 
 ================== 
 
+react-hook-form :- 
+--> built-In Validation : 
+   ----------------------- 
+
+1. required (boolean) 
+2. min (number) 
+3. max (number) 
+4. minLength (total number of characters) 
+5. maxLength (total number of characters) 
+6. 
+7. 
+
+formState: {errors} 
+
+
+?. optional chaining : 
+-----------------------
+
+array.object?.value/message
+-->if object is not undefined then it will access to value/message
+
+
+tasks : 
+-------- 
+2 forms with Validation 
+
+
+
+Date : 12/02/2026 
+================== 
 
 
 

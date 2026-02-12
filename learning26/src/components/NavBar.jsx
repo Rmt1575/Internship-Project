@@ -45,7 +45,7 @@ export const NavBar = () => {
                 Teams
               </Link>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/functiondemo">
                 FD1
               </Link>
@@ -64,7 +64,7 @@ export const NavBar = () => {
               <Link class="nav-link" to="/usestatedemo3">
                 USD3
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link class="nav-link" to="/employee">
                 Employee
