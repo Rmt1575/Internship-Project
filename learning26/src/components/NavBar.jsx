@@ -65,7 +65,7 @@ export const NavBar = () => {
                 USD3
               </Link>
             </li> */}
-            <li>
+            {/* <li>
               <Link class="nav-link" to="/employee">
                 Employee
               </Link>
@@ -74,7 +74,7 @@ export const NavBar = () => {
               <Link class="nav-link" to="/cards">
                 CARD
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link class="nav-link" to="/valorant">
                 VALORANT

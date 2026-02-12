@@ -129,12 +129,14 @@ export const FormDemo2 = () => {
         </div>
 
         {/* Submit Button */}
-        <button
-          type="submit"
-          style={{ padding: "8px 18px", cursor: "pointer" }}
-        >
-          Submit
-        </button>
+        <div style={{ textAlign: "center" }}>
+          <button
+            type="submit"
+            style={{ padding: "8px 18px", cursor: "pointer" }}
+          >
+            Submit
+          </button>
+        </div>
       </form>
 
       {/* Result */}
