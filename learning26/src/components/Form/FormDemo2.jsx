@@ -79,6 +79,7 @@ export const FormDemo2 = () => {
         style={{
           maxWidth: "700px",
           margin: "0 auto",
+          textAlign: "left",
         }}
       >
         {/* Name */}
