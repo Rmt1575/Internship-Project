@@ -83,7 +83,7 @@ export const CountryStateComponent = () => {
         {/* State */}
         <select
           {...register("stateName")}
-          disabled={!states.length}
+          disabled={!states.length}i
           defaultValue=""
           style={{ marginLeft: "10px" }}
         >

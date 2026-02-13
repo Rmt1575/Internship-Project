@@ -152,8 +152,6 @@ react-hook-form :-
 3. max (number) 
 4. minLength (total number of characters) 
 5. maxLength (total number of characters) 
-6. 
-7. 
 
 formState: {errors} 
 
@@ -171,8 +169,66 @@ tasks :
 
 
 
-Date : 12/02/2026 
+Date : 13/02/2026 
 ================== 
 
+react-hook-form :- 
+--> built-In Validation : 
+   ----------------------- 
+6. pattern 
+7. validate (custom pattern) 
+
+pattern --> regex regular expression pattern 
+ex., comtact no. ==> value : "/[6-9]{1}[0-9]{9}$/" 
+
+validate --> custom pattern validation 
+ex., validate: (valid)=>{
+
+    }
 
 
+useForm({mode:  "onChange", 
+                "onBlur", 
+                "onSubmit"(by default), 
+                "onTouch", 
+                "all"(all other 4 mode as same time)
+        }) 
+
+js-blur event : when focus loss from element then onBlur event is called
+
+
+watch : 
+-------- 
+--> parameter of useForm()
+{watch} = useForm()
+
+ex., const varName = watch("password") 
+
+tasks : 
+-------- 
+form --> password 
+    - min 1 capital 
+    - min 1 small 
+    - length 8 
+    - 1 special character 
+    - 1 digit 
+
+input type:"password">...
+
+by default all print in black color 
+--> when you start inserting password 
+--> all condition will be red and then if we fullfil that condition which is fullfil convert to green color 
+
+ex., 
+<p> 1 character capital </p>
+<p> 1 character samll </p>
+<p> 1 character digit </p>
+<p> 1 character special </p>
+<p> 8  total characters </p>
+
+tasks for next monday: 
+----------------------- 
+
+promises in javascript 
+json array 
+map filter 

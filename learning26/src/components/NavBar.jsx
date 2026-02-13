@@ -30,7 +30,7 @@ export const NavBar = () => {
                 Portfolio
               </Link>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/netflixshows">
                 Shows
               </Link>
@@ -44,7 +44,7 @@ export const NavBar = () => {
               <Link class="nav-link" to="/iplteams">
                 Teams
               </Link>
-            </li>
+            </li> */}
             {/* <li class="nav-item">
               <Link class="nav-link" to="/functiondemo">
                 FD1
@@ -115,6 +115,11 @@ export const NavBar = () => {
                 PG User
               </Link>
             </li>
+            <li>
+              <Link class="nav-link" to="/formdemo3">
+                FormDemo3
+              </Link>
+            </li>
             {/* <li class="nav-item">
               <Link class="nav-link" to="/MapDemo1">
                 MAPDEMO1
@@ -164,12 +169,12 @@ export const NavBar = () => {
               <Link class="nav-link" to="/MapDemo10">
                 MAPDEMO10
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item">
               <Link class="nav-link" to="/scoreboard">
                 SCORE BOARD
               </Link>
-            </li> */}
+            </li>
           </ul>
         </div>
       </nav>
