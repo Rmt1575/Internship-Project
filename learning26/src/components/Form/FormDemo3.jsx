@@ -7,12 +7,13 @@ export const FormDemo3 = () => {
     handleSubmit,
     formState: { errors },
     watch,
-  } = useForm({ mode: "onChange" });
+  } = useForm({ mode: "all" });
   console.log("errors : ", errors);
 
   //Submit Handler
   const submitHandler = (data) => {
-    console.log(data);
+    console.log(data);                                  
+    Alert("Form Is Succeessfully Submitted")
   };
 
   //password store with the use of watch() for validate confirmPassword
@@ -76,6 +77,7 @@ export const FormDemo3 = () => {
       <h1 style={{ textAlign: "center", color: "red" }}>
         FORM DEMO PATTERN & VALIDATE 3
       </h1>
+      <br/>
 
       {/* Form */}
       <form
@@ -95,6 +97,7 @@ export const FormDemo3 = () => {
           ></input>
           {errors.contact?.message}
         </div>
+        <br/>
 
         {/* PromoCode */}
         <div>
@@ -105,6 +108,7 @@ export const FormDemo3 = () => {
           ></input>
           {errors.promocode?.message}
         </div>
+        <br/>
 
         {/* Hobbies */}
         <div>
@@ -138,9 +142,10 @@ export const FormDemo3 = () => {
             type="checkbox"
             value="reading"
             {...register("hobbies", validationSchema.hobbiesValidator)}
-          ></input>
+          ></input>{" "}
           {errors.hobbies?.message}
         </div>
+        <br/>
 
         {/* Password */}
         <div>
@@ -151,6 +156,7 @@ export const FormDemo3 = () => {
           ></input>
           {errors.password?.message}
         </div>
+        <br/>
 
         {/* Confirm Password */}
         <div>
@@ -164,6 +170,7 @@ export const FormDemo3 = () => {
           ></input>
           {errors.confirmPassword?.message}
         </div>
+        <br/>
 
         {/* Submit Button */}
         <div style={{ textAlign: "center" }}>
