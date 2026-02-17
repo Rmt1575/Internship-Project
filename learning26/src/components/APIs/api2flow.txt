@@ -1,0 +1,43 @@
+products : [
+    id
+    title
+    description 
+    category 
+    price 
+    discount 
+    rating 
+    stock 
+    tags : [
+        "beauty","mascara"
+    ] 
+    brand 
+    sku 
+    weight 
+    dimensions : {
+        width 
+        height 
+        depth 
+    } 
+    warrantyInformation 
+    shippingInformation 
+    availabilityStatus 
+    reviews : [
+        {
+            rating 
+            comment 
+            date 
+            reviewerName 
+            reviewerEmail 
+        }
+    ]
+    returnPolicy 
+    minimumOrderQuantity 
+    meta : {
+        createdAt 
+        updatedAt 
+        barcode 
+        qrCode 
+    }
+    images : ["link"] 
+    thumbnail
+]

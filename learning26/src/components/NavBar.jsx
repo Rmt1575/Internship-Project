@@ -130,6 +130,16 @@ export const NavBar = () => {
                 API1
               </Link>
             </li>
+            <li>
+              <Link class="nav-link" to="/apitask1">
+                API T1
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/apitask2">
+                API T2
+              </Link>
+            </li>
             {/* <li class="nav-item">
               <Link class="nav-link" to="/MapDemo1">
                 MAPDEMO1
