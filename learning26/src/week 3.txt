@@ -168,7 +168,7 @@ packet.json --> index.html --> main.jsx --> app.jsx --> Route --> component --> 
 DOM - Document Object Model 
 
 HTML ---> js --->dynamic content full dom update
-js ---> DOM --> update ---> dom object fully update
+js ---> DOM --> update S---> dom object fully update
 
 DOM --> V-DOM --> process --> comp-algo. --> VDOM change --> og DOM compare --> 
 

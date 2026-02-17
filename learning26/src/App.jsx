@@ -43,6 +43,7 @@ import { FormDemo2 } from "./components/Form/FormDemo2.jsx";
 import { BloodDonationForm } from "./components/Form/BloodDonationForm.jsx";
 import { PGUser } from "./components/Form/PGUser.jsx";
 import { FormDemo3 } from "./components/Form/FormDemo3.jsx";
+import { PasswordForm } from "./components/Form/PasswordForm.jsx";
 
 function App() {
   useEffect(() => {
@@ -85,6 +86,7 @@ function App() {
         <Route path="/blooddonation" element={<BloodDonationForm />} />
         <Route path="/pguser" element={<PGUser />} />
         <Route path="/formdemo3" element={<FormDemo3 />} />
+        <Route path="/passwordform" element={<PasswordForm />} />
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path="/MapDemo1" element={<MapDemo1 />} />
         <Route path="/MapDemo2" element={<MapDemo2 />} />

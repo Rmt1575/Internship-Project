@@ -80,7 +80,7 @@ export const NavBar = () => {
                 VALORANT
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link class="nav-link" to="/formdemo1">
                 FormDemo1
               </Link>
@@ -104,7 +104,7 @@ export const NavBar = () => {
               <Link class="nav-link" to="/formdemo2">
                 FormDemo2
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link class="nav-link" to="/blooddonation">
                 Blood-Donation
@@ -118,6 +118,11 @@ export const NavBar = () => {
             <li>
               <Link class="nav-link" to="/formdemo3">
                 FormDemo3
+              </Link>
+            </li>
+            <li>
+              <Link class="nav-link" to="/passwordform">
+                PasswordForm
               </Link>
             </li>
             {/* <li class="nav-item">
