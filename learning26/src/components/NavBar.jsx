@@ -125,6 +125,11 @@ export const NavBar = () => {
                 PasswordForm
               </Link>
             </li>
+            <li>
+              <Link class="nav-link" to="/apidemo1">
+                API1
+              </Link>
+            </li>
             {/* <li class="nav-item">
               <Link class="nav-link" to="/MapDemo1">
                 MAPDEMO1

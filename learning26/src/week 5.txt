@@ -1,0 +1,145 @@
+WEEK -- 5 : 
+============ 
+============ 
+
+
+
+Date : 16/02/2026 
+================== 
+
+Holiday --> Mahashivratri
+
+
+
+Date : 17/02/2026 
+================== 
+
+API Calling : 
+-------------- 
+
+Application Programming Interface 
+    --> Communication between frontend and backend 
+Producer of API : Frontend developer 
+Consumer of API : Backend developer
+
+frontend end : React --> No Database Connectivity 
+frontend framework 
+    Java Object --> fatch no 
+    Ganric (ex., translator) 
+    URL : 
+    Website : 
+        --> Data Transfer ==> APIs 
+ex., google map --> url --> api --> uber --> map 
+backend end : Java,php 
+
+
+API : instruction -- request method --> let url know what it mean to do 
+------ 
+4 request method from many : 
+--> GET 
+--> POST 
+--> PUT 
+--> DELETE 
+
+Backend: 
+GET : database fetch --> send --> frontend
+POST : frontend --> get data --> database 
+PUT : update data 
+DELETE : delete data 
+
+Frontend:
+GET : database --> frontend display 
+POST : form --> data --> 
+PUT : update 
+DELETE : delete 
+
+** Browser can call only GET API ** 
+
+Datatype : JSON (javascript Object Notation)
+--> both frontend and backend have 
+
+xml  --> JSON (because in xml making rule is complicated) 
+|         |
+SOAP --> REST
+
+
+ReactJS : API calling : 
+------------------------ 
+make function --> call API
+
+js --> fetch function (build-in) : apis 
+3rd party --> axios 
+
+axios (package) :
+------------------ 
+
+npm i axios --> install axios 
+
+GET : -- return promise (by default return pendding stage of promise) 
+
+ex., const getUsers = () => {
+    axios.get("--url--") 
+}
+
+async() --> function --> return promise 
+return pandding
+await : wait for promise to resolve or reject 
+ex., await axios.get("--url--") 
+
+flow: 
+------
+component :
+function --> api call --> response --> 
+check --> pandding 
+submit --> 
+console --> response 
+response.data 
+response.data.message 
+response.data.data 
+
+useStare message set --> return print message 
+useSate data set --> return print data 
+
+tasks : 
+-------
+difference between fetch function and axios 
+print api data in table format --> url 1 : "https://node5.onrender.com/user/user/"
+print 3-4 data from api 2 url 
+--> url 2 : "https://dummyjson.com/products"
+--> url 3 : "https://dummyjson.com/comments"
+
+
+
+Date : 18/02/2026 
+================== 
+
+
+
+
+
+
+
+
+
+Date : 19/02/2026 
+================== 
+
+
+
+
+
+
+
+
+
+
+Date : 20/02/2026 
+================== 
+
+
+
+
+
+
+
+

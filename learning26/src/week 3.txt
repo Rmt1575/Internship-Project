@@ -172,6 +172,7 @@ js ---> DOM --> update S---> dom object fully update
 
 DOM --> V-DOM --> process --> comp-algo. --> VDOM change --> og DOM compare --> 
 
+VDOM -- virtual replica of real DOM 
 
 2 way to call function
 ---> function as object --> with out () parenthesis 
