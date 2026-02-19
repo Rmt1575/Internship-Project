@@ -47,6 +47,9 @@ import { PasswordForm } from "./components/Form/PasswordForm.jsx";
 import { ApiDemo1 } from "./components/APIs/ApiDemo1.jsx";
 import { ApiTask1 } from "./components/APIs/ApiTask1.jsx";
 import { ApiTask2 } from "./components/APIs/ApiTask2.jsx";
+import { Omdb } from "./components/APIs/Omdb.jsx";
+import { MovieDetails } from "./components/APIs/MovieDetails.jsx";
+import { Imdb } from "./components/APIs/Imdb.jsx";
 
 function App() {
   useEffect(() => {
@@ -93,6 +96,9 @@ function App() {
         <Route path="/apidemo1" element={<ApiDemo1 />} />
         <Route path="/apitask1" element={<ApiTask1 />} />
         <Route path="/apitask2" element={<ApiTask2 />} />
+        <Route path="/omdb" element={<Omdb />} />
+        <Route path="/imdb" element={<Imdb />} />
+        <Route path="/moviedetails/:id" element={<MovieDetails />} />
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path="/MapDemo1" element={<MapDemo1 />} />
         <Route path="/MapDemo2" element={<MapDemo2 />} />

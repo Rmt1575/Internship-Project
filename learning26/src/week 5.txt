@@ -113,11 +113,43 @@ print 3-4 data from api 2 url
 Date : 18/02/2026 
 ================== 
 
+:frontend:
+POST --> data collect -->backend -->
+
+--> frontend form --> name email age password..
+--> backend --> firstName userEmail userAge userPassword  --> null undfined..
+
+POST : https://node5.onrender.com/user/user/
+{
+	"name": "Shyam",
+    "email": "Shaym3@gmail.com",
+    "password": "",
+    "age": 25,
+    "isActive": true,
+}
 
 
+tasks : 
+-------- 
+task 1 : 
+Grid movie data
 
+detail button... -->Moive Detail componnet
+    on click --> in url send imdbid-->
 
+-->
+movieDetail -->fetch id from url using useParams()
+function movieDetail -->
 
+https://www.omdbapi.com/?apikey=apikey&i=useparams id -->
+
+task 2 : 
+take input type text --> moviename
+
+task3 : 
+ApiDemo3
+form -->  name,email,age,isActive,password  -->submit -->handleSubmit --> async submitHanlder(data) --> api --> post("url",data)
+Note: --> take register name as per api param.. api name -->register name
 
 
 
