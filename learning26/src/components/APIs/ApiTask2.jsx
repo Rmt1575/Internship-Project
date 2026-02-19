@@ -2,13 +2,18 @@ import axios from "axios";
 import React, { useState } from "react";
 
 export const ApiTask2 = () => {
-  const [Commnets, setCommnets] = useState([]);
+  const [Comments, setComments] = useState([]);
 
-  const getCommnets = async () => {
-    const response = await axios.get("https://dummyjson.com/comments");
-    console.log(response);
-    console.log(response.data.commnets);
-    setCommnets(response.data.commnets);
+  const getComments = async () => {
+    try {
+      const response = await axios.get("https://dummyjson.com/comments");
+      console.log(response);
+      console.log(response.data);
+      setComments(response.data.comments);
+    } catch (error) {
+      console.log(error.message);
+      console.log("Error fetching comments:", error);
+    }
   };
 
   return (
@@ -20,13 +25,13 @@ export const ApiTask2 = () => {
       <button
         style={{ color: "skyblue" }}
         onClick={() => {
-          getCommnets();
+          getComments();
         }}
       >
         GET COMMENTS
       </button>
       <br />
-      {Commnets?.length > 0 && (
+      {Comments.length > 0 && (
         <table className="table table-dark">
           <thead>
             <tr>
@@ -40,7 +45,7 @@ export const ApiTask2 = () => {
             </tr>
           </thead>
           <tbody>
-            {Commnets.map((comment) => {
+            {Comments.map((comment) => {
               return (
                 <tr>
                   <td>{comment.id}</td>
@@ -49,7 +54,7 @@ export const ApiTask2 = () => {
                   <td>{comment.likes}</td>
                   <td>{comment.user.id}</td>
                   <td>{comment.user.username}</td>
-                  <td>{comment.user.fullname}</td>
+                  <td>{comment.user.fullName}</td>
                 </tr>
               );
             })}

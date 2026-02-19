@@ -50,6 +50,7 @@ import { ApiTask2 } from "./components/APIs/ApiTask2.jsx";
 import { Omdb } from "./components/APIs/Omdb.jsx";
 import { MovieDetails } from "./components/APIs/MovieDetails.jsx";
 import { Imdb } from "./components/APIs/Imdb.jsx";
+import { ApiPostDemo1 } from "./components/APIs/ApiPostDemo1.jsx";
 
 function App() {
   useEffect(() => {
@@ -99,6 +100,7 @@ function App() {
         <Route path="/omdb" element={<Omdb />} />
         <Route path="/imdb" element={<Imdb />} />
         <Route path="/moviedetails/:id" element={<MovieDetails />} />
+        <Route path="/apipostdemo1" element={<ApiPostDemo1 />} />
         {/* <Route path='/' element={<Home/>}/> */}
         <Route path="/MapDemo1" element={<MapDemo1 />} />
         <Route path="/MapDemo2" element={<MapDemo2 />} />

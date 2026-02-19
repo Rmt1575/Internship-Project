@@ -150,6 +150,11 @@ export const NavBar = () => {
                 IMDB
               </Link>
             </li>
+            <li>
+              <Link class="nav-link" to="/apipostdemo1">
+                API Post 1
+              </Link>
+            </li>
             {/* <li class="nav-item">
               <Link class="nav-link" to="/MapDemo1">
                 MAPDEMO1
